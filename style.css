@@ -95,12 +95,12 @@ img {
 }
 
 .site-header:not(.is-scrolled) .brand,
-.site-header:not(.is-scrolled) .nav-list a,
+.site-header:not(.is-scrolled) .nav-list:not(.is-open) a,
 .site-header:not(.is-scrolled) .nav-toggle {
   color: var(--paper);
 }
 
-.site-header:not(.is-scrolled) .nav-list a:hover {
+.site-header:not(.is-scrolled) .nav-list:not(.is-open) a:hover {
   color: var(--glow);
 }
 
