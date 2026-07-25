@@ -24,7 +24,8 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#side-projects">Side projects</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#passions">Passions</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -34,39 +35,28 @@
   <main>
     <section class="hero">
       <div class="hero-visual" aria-hidden="true">
-        <div class="chart-plane">
-          <svg viewBox="0 0 640 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#0f766e" stop-opacity="0.22"/>
-                <stop offset="100%" stop-color="#0f766e" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-            <path d="M40 420 C120 390, 160 300, 220 280 C290 255, 320 340, 390 300 C460 260, 500 180, 600 140 L600 460 L40 460 Z" fill="url(#areaFill)"/>
-            <path class="chart-line" d="M40 420 C120 390, 160 300, 220 280 C290 255, 320 340, 390 300 C460 260, 500 180, 600 140" stroke="#0f766e" stroke-width="3" stroke-linecap="round"/>
-            <g class="chart-dot" fill="#0a5c56">
-              <circle cx="220" cy="280" r="6"/>
-              <circle cx="390" cy="300" r="6"/>
-              <circle cx="600" cy="140" r="7"/>
-            </g>
-            <g stroke="rgba(20,32,28,0.08)" stroke-width="1">
-              <line x1="40" y1="100" x2="600" y2="100"/>
-              <line x1="40" y1="200" x2="600" y2="200"/>
-              <line x1="40" y1="300" x2="600" y2="300"/>
-              <line x1="40" y1="400" x2="600" y2="400"/>
-            </g>
-          </svg>
-        </div>
+        <img
+          class="hero-image"
+          src="image.jpg"
+          alt=""
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        >
+        <div class="hero-fade"></div>
       </div>
 
       <div class="container">
         <div class="hero-copy">
           <h1 class="hero-name">Deni Hamiti</h1>
-          <p class="hero-title">Data Analyst</p>
           <p class="hero-lede">
-            Transforming complex public health data into clear, actionable insights
-            for better decisions and healthier communities.
+            I’m drawn to data for the questions it opens—and for the clarity it can give
+            others when those answers are shared well.
           </p>
+          <blockquote class="hero-quote">
+            <p>“The goal is to turn data into information, and information into insight.”</p>
+            <cite>Carly Fiorina</cite>
+          </blockquote>
           <div class="cta-row">
             <a class="btn btn-primary" href="#contact">Get in touch</a>
             <a class="btn btn-ghost" href="https://www.linkedin.com/in/deni-hamiti/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -78,17 +68,25 @@
     <section id="about" class="section">
       <div class="container reveal">
         <p class="section-label">About</p>
-        <h2 class="section-title">Clarity from complexity</h2>
+        <h2 class="section-title">What data analytics means to me</h2>
         <div class="about-grid">
           <div class="about-body section-lede" style="margin-bottom: 0;">
             <p>
-              I’m a data analyst at the Massachusetts Department of Public Health,
-              focused on turning messy, high-stakes datasets into stories people can act on.
+              To me, data analytics is less about numbers on a screen and more about
+              listening carefully—to patterns, outliers, and the stories hiding in plain sight.
+              It’s a way of pursuing knowledge with rigor, then translating what I find
+              so others can use it.
             </p>
             <p>
-              With a dual background in chemistry and mathematics from UMass Amherst,
-              I bring scientific rigor and quantitative fluency to every analysis—
-              from exploratory work in R and SQL to visualizations that make findings stick.
+              As a data analyst at the Massachusetts Department of Public Health, I apply
+              that mindset to high-stakes public health work: exploring messy datasets in
+              SQL, R, and Python, and building Tableau dashboards that help partners
+              see what matters and act on it.
+            </p>
+            <p>
+              My background in chemistry and mathematics from UMass Amherst shaped how I
+              approach every project—with curiosity, precision, and a belief that good
+              analysis should always be understandable.
             </p>
           </div>
           <div>
@@ -96,6 +94,8 @@
             <ul class="skill-list">
               <li>SQL</li>
               <li>R</li>
+              <li>Python</li>
+              <li>Tableau</li>
               <li>Data analysis</li>
               <li>Data visualization</li>
               <li>Problem solving</li>
@@ -141,49 +141,59 @@
       </div>
     </section>
 
-    <section id="side-projects" class="section">
+    <section id="portfolio" class="section">
       <div class="container reveal">
-        <p class="section-label">Side projects</p>
-        <h2 class="section-title">Games &amp; modeling notes</h2>
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Data visualizations</h2>
+        <div class="portfolio-placeholder" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="passions" class="section">
+      <div class="container reveal">
+        <p class="section-label">Passions</p>
+        <h2 class="section-title">Albania &amp; beyond</h2>
         <p class="section-lede">
-          Outside of work I build games for fun, and write about statistical modeling
-          techniques I use when the data gets interesting.
+          I return to Albania — my home country — to explore the places that shaped my childhood.
+          These moments keep me grounded and curious.
         </p>
 
-        <div class="side-stack">
-          <article class="side-item">
-            <p class="side-kicker">Hobby</p>
-            <h3>Making games</h3>
-            <p>
-              Game design is my creative outlet — prototyping mechanics, tuning feel,
-              and figuring out how systems interact. I treat each project like a small
-              experiment: ship something playable, learn from it, then start the next one.
-            </p>
-          </article>
-
-          <article class="side-item">
-            <p class="side-kicker">Writing</p>
-            <h3>Notes on statistical modeling</h3>
-            <p>
-              Short write-ups on models and methods I’ve applied in practice —
-              how I chose them, what broke, and what I’d do differently next time.
-            </p>
-            <ul class="note-list">
-              <li>
-                <strong>Regression in the wild</strong>
-                <span>Fitting, checking assumptions, and communicating uncertainty without drowning the reader.</span>
-              </li>
-              <li>
-                <strong>When counts aren’t normal</strong>
-                <span>Poisson and related models for event and rate data in public health contexts.</span>
-              </li>
-              <li>
-                <strong>Visualizing model fit</strong>
-                <span>Residual plots and simple diagnostics that make “does this model work?” answerable.</span>
-              </li>
-            </ul>
-          </article>
+        <div class="passion-gallery" aria-label="Photos from Albania">
+          <figure class="passion-photo passion-photo--wide">
+            <img src="images/IMG_0650.jpeg" alt="Clear turquoise water along the Albanian coast" loading="lazy" width="1200" height="1600">
+          </figure>
+          <figure class="passion-photo">
+            <img src="images/IMG_0723.jpeg" alt="Mountain landscape in Albania" loading="lazy" width="1200" height="1600">
+          </figure>
+          <figure class="passion-photo">
+            <img src="images/IMG_0832.jpeg" alt="Scenic view in Albania" loading="lazy" width="1200" height="1600">
+          </figure>
+          <figure class="passion-photo">
+            <img src="images/IMG_1056.JPG" alt="Albanian countryside" loading="lazy" width="1200" height="1600">
+          </figure>
+          <figure class="passion-photo">
+            <img src="images/IMG_1057.JPG" alt="Albanian landscape" loading="lazy" width="1200" height="1600">
+          </figure>
+          <figure class="passion-photo">
+            <img src="images/IMG_1059.jpeg" alt="Coastal scenery in Albania" loading="lazy" width="1200" height="1600">
+          </figure>
+          <figure class="passion-photo">
+            <img src="images/IMG_1067.JPG" alt="View from Albania" loading="lazy" width="1200" height="1600">
+          </figure>
+          <figure class="passion-photo passion-photo--wide">
+            <img src="images/IMG_1127.jpeg" alt="Albanian mountains and valleys" loading="lazy" width="1200" height="1600">
+          </figure>
         </div>
+
+        <article class="passion-item">
+          <p class="passion-kicker">Hobby</p>
+          <h3>Game development</h3>
+          <p>
+            Game design is my creative outlet — prototyping mechanics, tuning feel,
+            and figuring out how systems interact. I treat each project like a small
+            experiment: ship something playable, learn from it, then start the next one.
+          </p>
+        </article>
       </div>
     </section>
   </main>
@@ -196,7 +206,8 @@
         Based in Quincy, Massachusetts. Open to conversations about data, public health, and collaboration.
       </p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="https://www.linkedin.com/in/deni-hamiti/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn btn-primary" href="mailto:hamitideni@gmail.com">Email</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/deni-hamiti/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a class="btn btn-ghost" href="https://github.com/DeniHamiti" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
@@ -214,7 +225,7 @@
     const navList = document.querySelector(".nav-list");
 
     const onScroll = () => {
-      header.classList.toggle("is-scrolled", window.scrollY > 12);
+      header.classList.toggle("is-scrolled", window.scrollY > 80);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
